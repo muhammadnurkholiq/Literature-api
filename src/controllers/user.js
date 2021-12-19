@@ -2,6 +2,7 @@ const { user } = require("../../models");
 
 const fs = require("fs");
 
+// update detail user
 exports.updateUserData = async (req, res) => {
   const { id } = req.user;
 
@@ -46,6 +47,7 @@ exports.updateUserData = async (req, res) => {
   }
 };
 
+// update photo user
 exports.updateUserAvatar = async (req, res) => {
   const { id } = req.user;
 
